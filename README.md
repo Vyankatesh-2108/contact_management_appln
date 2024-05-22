@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Contact Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a contact management application built with ReactJS, TypeScript, TailwindCSS, React Router v6, and React Query (TanstackQuery). It allows users to manage their contacts, view COVID-19 case statistics, and explore data on a map.
 
-## Available Scripts
+### Features
 
-In the project directory, you can run:
+- Add, edit, and delete contacts
+- Store contact data in Redux store and persist it in local storage
+- Display a list of all added contacts
+- View COVID-19 case fluctuations on a line graph
+- Explore COVID-19 data by country on an interactive map
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone the repository:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+git clone https://github.com/Vyankatesh-2108/contact-management-app.git
+```
 
-### `npm test`
+Navigate to the project directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd contact-management-app
+```
 
-### `npm run build`
+Install the dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open the application in your browser at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Use the navigation menu to switch between the Contacts, Charts, and Maps pages.
+On the Contacts page, you can add new contacts using the provided form. The contact list will display all the added contacts, and you can edit or delete them as needed.
+On the Charts page, you can view a line graph showing the fluctuations of COVID-19 cases over time. The data is fetched from the disease.sh API.
+On the Maps page, you can explore COVID-19 data by country on an interactive map. Clicking on a country marker will display a popup with the country name, total active cases, recovered cases, and deaths.
+API Endpoints
+The application uses the following API endpoints to fetch COVID-19 data:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+World wide data of cases: https://disease.sh/v3/covid-19/all
+Country-specific data of cases: https://disease.sh/v3/covid-19/countries
+Graph data for cases with date: https://disease.sh/v3/covid-19/historical/all?lastdays=all
+Technologies Used
+ReactJS
+TypeScript
+TailwindCSS
+React Router v6
+React Query (TanstackQuery)
+Redux Toolkit
+Recharts
+React Leaflet
+Project Structure
