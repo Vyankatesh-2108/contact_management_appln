@@ -1,4 +1,4 @@
-# Contact Management App
+# Contact Management Application
 
 This is a contact management application built with ReactJS, TypeScript, TailwindCSS, React Router v6, and React Query (TanstackQuery). It allows users to manage their contacts, view COVID-19 case statistics, and explore data on a map.
 
